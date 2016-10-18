@@ -1,0 +1,28 @@
+package com.packt.masteringakka.bookstore.order;
+option java_outer_classname = "Datamodel";
+option optimize_for = SPEED;
+
+message SalesOrderLineItem{
+  required int32 lineItemNumber = 1;
+  required string bookId = 2;
+  required int32 quantity = 3;
+  required double cost = 4;
+} 
+ 
+message SalesOrder {
+  required string id = 1;
+  required string userId = 2;
+  required string creditTxnId = 3;
+  repeated SalesOrderLineItem lineItem = 4;
+  required string status = 5;
+  required int64 createTs = 6;
+  required double totalCost = 7;
+}
+
+message OrderCreated{
+  required SalesOrder order = 1;
+}
+
+message OrderStatusUpdated{
+  required string status = 1;
+}

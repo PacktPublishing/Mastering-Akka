@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  cassandra:
+    image: cassandra:3
+    container_name: cassandra
+    ports:
+      - "7000:7000"
+      - "9042:9042"
+    environment:
+#      - "TZ=Europe/Amsterdam"
+      - "CASSANDRA_CLUSTER_NAME=OUR_DOCKERIZED_CASSANDRA_SINGLE_NODE_CLUSTER"
+
+  bookstore:
+    image: chapter4-server-complete:latest
+    container_name: bookstore
+    environment:
+      - "TZ=Europe/Amsterdam"
+      - "CASSANDRA_HOST=cassandra"
+      - "PERSISTENT_ENTITY_TIMEOUT=10s"
+    ports:
+      - "8080:8080"

@@ -1,0 +1,44 @@
+package com.packt.masteringakka.bookstore.inventory;
+option java_outer_classname = "Datamodel";
+option optimize_for = SPEED;
+
+ 
+message Book {
+  required string id = 1;
+  required string title = 2;
+  required string author = 3;
+  repeated string tag = 4;
+  required double cost = 5;
+  required int32 inventoryAmount = 6;
+  required int64 createTs = 7;
+  required bool deleted = 8;
+}
+
+message BookCreated{
+  required Book book = 1;
+}
+
+message TagAdded{
+  required string tag = 1;
+}
+
+message TagRemoved{
+  required string tag = 1;
+}
+
+message InventoryAdded{
+  required int32 amount = 1;
+}
+
+message InventoryAllocated{
+  required string orderId = 1;
+  required int32 amount = 2;
+}
+
+message InventoryBackordered{
+  required string orderId = 1;
+}
+
+message BookDeleted{
+  required string id = 1;
+}

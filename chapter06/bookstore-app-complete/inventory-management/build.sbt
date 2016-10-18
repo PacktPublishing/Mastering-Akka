@@ -1,0 +1,1 @@
+name := "chapter6-inventory-management-complete"

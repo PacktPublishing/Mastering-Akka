@@ -1,0 +1,29 @@
+<configuration debug="true">
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>
+        %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+      </Pattern>
+    </layout>
+  </appender>
+
+    <!-- The catch all logger that will receive everything (except the access log data) -->
+  <!--<appender name="serverLog" class="ch.qos.logback.core.rolling.RollingFileAppender" level="ERROR">-->
+    <!--<file>server.log</file>-->
+    <!--<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+	    <!--<fileNamePattern>server.%d{yyyy-MM-dd}.log</fileNamePattern>-->
+	    <!--<maxHistory>30</maxHistory>-->
+    <!--</rollingPolicy>        -->
+    <!--<append>true</append>-->
+    <!--<encoder>-->
+      <!--<pattern>%d [%thread] %-5level %logger{35} - %msg%n</pattern>-->
+      <!--<immediateFlush>true</immediateFlush>-->
+    <!--</encoder>-->
+  <!--</appender> -->
+
+  <root level="debug">
+    <appender-ref ref="STDOUT" />
+  </root>
+
+</configuration>

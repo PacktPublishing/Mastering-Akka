@@ -1,0 +1,23 @@
+package com.packt.masteringakka.bookstore.credit;
+option java_outer_classname = "Datamodel";
+option optimize_for = SPEED;
+
+message CreditCardInfo{
+  required string cardHolder = 1;
+  required string cardType = 2;
+  required string cardNumber = 3;
+  required int64 expiration = 4;
+}
+ 
+message CreditCardTransaction {
+  required string id = 1;
+  required CreditCardInfo cardInfo = 2;
+  required double amount = 3;
+  required string status = 4;
+  optional string confirmationCode = 5;
+  required int64 createTs = 6;
+}
+
+message CreditTransactionCreated{
+  required CreditCardTransaction txn = 1;
+}

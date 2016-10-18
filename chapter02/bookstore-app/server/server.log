@@ -1,0 +1,476 @@
+2016-04-19 09:37:10,674 [main] WARN  com.zaxxer.hikari.HikariConfig - The jdbcConnectionTest property is now deprecated, see the documentation for connectionTestQuery
+2016-04-19 09:37:10,679 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariCP pool psqldb configuration:
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionCustomizer............com.zaxxer.hikari.AbstractHikariConfig$1@3427b02d
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionCustomizerClassName...
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............select 1
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............1000
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............
+2016-04-19 09:37:10,698 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName.................org.postgresql.Driver
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailFast..........false
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbc4ConnectionTest.............false
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:postgresql://localhost:5432/akkaexampleapp
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2016-04-19 09:37:10,699 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................50
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................psqldb
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................root
+2016-04-19 09:37:10,700 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............1000
+2016-04-19 09:37:10,703 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariCP pool psqldb is starting.
+2016-04-19 09:37:10,867 [HikariCP connection filler (pool psqldb)] DEBUG c.zaxxer.hikari.pool.PoolUtilities - psqldb - Connection.setNetworkTimeout() not supported
+2016-04-19 09:37:10,970 [Bookstore-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2016-04-19 09:37:11,080 [Bookstore-akka.actor.default-dispatcher-4] INFO  Server - Adding endpoint: com.packt.masteringakka.bookstore.order.SalesOrderEndpoint@53045c6c
+2016-04-19 09:37:11,082 [Bookstore-akka.actor.default-dispatcher-4] INFO  Server - Adding endpoint: com.packt.masteringakka.bookstore.user.UserEndpoint@cb0755b
+2016-04-19 09:37:11,082 [Bookstore-akka.actor.default-dispatcher-4] INFO  Server - Adding endpoint: com.packt.masteringakka.bookstore.book.BookEndpoint@33065d67
+2016-04-19 09:37:11,089 [main] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+2016-04-19 09:37:11,095 [main] DEBUG i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+2016-04-19 09:37:11,106 [main] DEBUG i.n.u.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2016-04-19 09:37:11,106 [main] DEBUG i.n.u.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2016-04-19 09:37:11,106 [main] DEBUG i.n.u.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2016-04-19 09:37:11,106 [main] DEBUG i.n.u.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+2016-04-19 09:37:11,112 [HikariCP connection filler (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - After fill pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:37:11,128 [main] DEBUG i.n.util.internal.PlatformDependent - UID: 501
+2016-04-19 09:37:11,129 [main] DEBUG i.n.util.internal.PlatformDependent - Java version: 8
+2016-04-19 09:37:11,129 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+2016-04-19 09:37:11,129 [main] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2016-04-19 09:37:11,130 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+2016-04-19 09:37:11,133 [main] DEBUG i.n.util.internal.PlatformDependent - Javassist: available
+2016-04-19 09:37:11,134 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/7q/8kqdnsxx35765lcgbqk6_23r0000gn/T (java.io.tmpdir)
+2016-04-19 09:37:11,134 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-04-19 09:37:11,134 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2016-04-19 09:37:11,150 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2016-04-19 09:37:11,150 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-04-19 09:37:11,181 [main] DEBUG i.n.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x81dbc1ef44f925bc (took 1 ms)
+2016-04-19 09:37:11,210 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+2016-04-19 09:37:11,210 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-04-19 09:37:11,212 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-04-19 09:37:11,212 [main] DEBUG io.netty.util.NetUtil - /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-04-19 09:37:40,716 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - Before cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:37:40,717 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - After cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:37:46,282 [nioEventLoopGroup-3-1] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetectionLevel: simple
+2016-04-19 09:37:46,297 [nioEventLoopGroup-3-1] DEBUG i.n.u.i.JavassistTypeParameterMatcherGenerator - Generated: io.netty.util.internal.__matchers__.io.netty.handler.codec.http.HttpObjectMatcher
+2016-04-19 09:37:46,303 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-04-19 09:37:46,427 [Bookstore-akka.actor.default-dispatcher-3] INFO  c.p.m.b.order.NewSalesOrderManager - Creating new sales order processor and forwarding request
+2016-04-19 09:37:46,446 [Bookstore-akka.actor.default-dispatcher-2] INFO  c.p.m.bookstore.book.BookManager - Looking up book for id: 1
+2016-04-19 09:37:46,470 [Bookstore-akka.actor.default-dispatcher-4] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted]
+2016-04-19 09:37:46,470 [Bookstore-akka.actor.default-dispatcher-3] DEBUG s.backend.DatabaseComponent.action - #1: : StreamingResultAction 
+    : [
+    :     select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    :     from Book b left join BookTag t on b.id = t.bookId where
+    :    b.id in (1) and not b.deleted group by b.id]
+2016-04-19 09:37:46,486 [psqldb-1] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+    select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    from Book b left join BookTag t on b.id = t.bookId where
+   b.id in (1) and not b.deleted group by b.id
+2016-04-19 09:37:46,486 [psqldb-2] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted
+2016-04-19 09:37:46,489 [psqldb-2] DEBUG c.zaxxer.hikari.pool.PoolUtilities - psqldb - Statement.setQueryTimeout() not supported
+2016-04-19 09:37:46,489 [psqldb-1] DEBUG c.zaxxer.hikari.pool.PoolUtilities - psqldb - Statement.setQueryTimeout() not supported
+2016-04-19 09:37:46,564 [psqldb-2] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 36ms
+2016-04-19 09:37:46,565 [psqldb-1] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 38ms
+2016-04-19 09:37:46,584 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - /----+-------+--------+------+------+-----------------+----------+----------\
+2016-04-19 09:37:46,584 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - /----+-----------+----------+-------+----------+----------\
+2016-04-19 09:37:46,584 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2     | 3      | 4    | 5    | 6               | 7        | 8        |
+2016-04-19 09:37:46,584 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2         | 3        | 4     | 5        | 6        |
+2016-04-19 09:37:46,584 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - | id | title | author | tags | cost | inventoryamount | createts | modifyts |
+2016-04-19 09:37:46,584 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - | id | firstname | lastname | email | createts | modifyts |
+2016-04-19 09:37:46,584 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - |----+-------+--------+------+------+-----------------+----------+----------|
+2016-04-19 09:37:46,584 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - |----+-----------+----------+-------+----------+----------|
+2016-04-19 09:37:46,584 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - \----+-------+--------+------+------+-----------------+----------+----------/
+2016-04-19 09:37:46,584 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - \----+-----------+----------+-------+----------+----------/
+2016-04-19 09:37:46,766 [nioEventLoopGroup-3-1] DEBUG io.netty.util.internal.Cleaner0 - java.nio.ByteBuffer.cleaner(): available
+2016-04-19 09:38:00,098 [Bookstore-akka.actor.default-dispatcher-3] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted]
+2016-04-19 09:38:00,099 [psqldb-3] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted
+2016-04-19 09:38:00,100 [psqldb-3] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 458µs
+2016-04-19 09:38:00,101 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - /----+-----------+----------+-------+----------+----------\
+2016-04-19 09:38:00,101 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2         | 3        | 4     | 5        | 6        |
+2016-04-19 09:38:00,101 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - | id | firstname | lastname | email | createts | modifyts |
+2016-04-19 09:38:00,101 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - |----+-----------+----------+-------+----------+----------|
+2016-04-19 09:38:00,101 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - \----+-----------+----------+-------+----------+----------/
+2016-04-19 09:38:03,609 [Bookstore-akka.actor.default-dispatcher-3] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted]
+2016-04-19 09:38:03,609 [psqldb-4] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted
+2016-04-19 09:38:03,610 [psqldb-4] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 423µs
+2016-04-19 09:38:03,617 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - /----+-----------+----------+----------------------+----------------------+----------------------\
+2016-04-19 09:38:03,617 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2         | 3        | 4                    | 5                    | 6                    |
+2016-04-19 09:38:03,618 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - | id | firstname | lastname | email                | createts             | modifyts             |
+2016-04-19 09:38:03,618 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - |----+-----------+----------+----------------------+----------------------+----------------------|
+2016-04-19 09:38:03,618 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - | 2  | Chris     | Baxter   | chris@masteringak... | 2016-04-14 00:00:... | 2016-04-14 00:00:... |
+2016-04-19 09:38:03,618 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - \----+-----------+----------+----------------------+----------------------+----------------------/
+2016-04-19 09:38:10,715 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - Before cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:38:10,715 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - After cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:38:12,201 [Bookstore-akka.actor.default-dispatcher-4] INFO  c.p.m.bookstore.book.BookManager - Looking up book for id: 1
+2016-04-19 09:38:12,202 [Bookstore-akka.actor.default-dispatcher-3] DEBUG s.backend.DatabaseComponent.action - #1: : StreamingResultAction 
+    : [
+    :     select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    :     from Book b left join BookTag t on b.id = t.bookId where
+    :    b.id in (1) and not b.deleted group by b.id]
+2016-04-19 09:38:12,202 [psqldb-5] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+    select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    from Book b left join BookTag t on b.id = t.bookId where
+   b.id in (1) and not b.deleted group by b.id
+2016-04-19 09:38:12,204 [psqldb-5] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 1ms
+2016-04-19 09:38:12,205 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - /----+-------+--------+------+------+-----------------+----------+----------\
+2016-04-19 09:38:12,205 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2     | 3      | 4    | 5    | 6               | 7        | 8        |
+2016-04-19 09:38:12,205 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - | id | title | author | tags | cost | inventoryamount | createts | modifyts |
+2016-04-19 09:38:12,205 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - |----+-------+--------+------+------+-----------------+----------+----------|
+2016-04-19 09:38:12,205 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - \----+-------+--------+------+------+-----------------+----------+----------/
+2016-04-19 09:38:14,056 [Bookstore-akka.actor.default-dispatcher-4] INFO  c.p.m.bookstore.book.BookManager - Looking up book for id: 2
+2016-04-19 09:38:14,056 [Bookstore-akka.actor.default-dispatcher-3] DEBUG s.backend.DatabaseComponent.action - #1: : StreamingResultAction 
+    : [
+    :     select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    :     from Book b left join BookTag t on b.id = t.bookId where
+    :    b.id in (2) and not b.deleted group by b.id]
+2016-04-19 09:38:14,057 [psqldb-6] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+    select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    from Book b left join BookTag t on b.id = t.bookId where
+   b.id in (2) and not b.deleted group by b.id
+2016-04-19 09:38:14,059 [psqldb-6] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 2ms
+2016-04-19 09:38:14,064 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - /----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------\
+2016-04-19 09:38:14,064 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2                    | 3           | 4             | 5     | 6               | 7                    | 8                    |
+2016-04-19 09:38:14,064 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - | id | title                | author      | tags          | cost  | inventoryamount | createts             | modifyts             |
+2016-04-19 09:38:14,064 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - |----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------|
+2016-04-19 09:38:14,064 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - | 2  | 20000 Leagues Und... | Jules Verne | fiction,scifi | 19.99 | 0               | 2016-04-14 00:00:... | 2016-04-14 20:00:... |
+2016-04-19 09:38:14,064 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - \----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------/
+2016-04-19 09:38:40,714 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - Before cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:38:40,714 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - After cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:39:10,712 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - Before cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:39:10,712 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - After cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:39:28,946 [Bookstore-akka.actor.default-dispatcher-5] INFO  c.p.m.b.order.NewSalesOrderManager - Creating new sales order processor and forwarding request
+2016-04-19 09:39:28,947 [Bookstore-akka.actor.default-dispatcher-2] INFO  c.p.m.bookstore.book.BookManager - Looking up book for id: 2
+2016-04-19 09:39:28,947 [Bookstore-akka.actor.default-dispatcher-4] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted]
+2016-04-19 09:39:28,947 [Bookstore-akka.actor.default-dispatcher-6] DEBUG s.backend.DatabaseComponent.action - #1: : StreamingResultAction 
+    : [
+    :     select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    :     from Book b left join BookTag t on b.id = t.bookId where
+    :    b.id in (2) and not b.deleted group by b.id]
+2016-04-19 09:39:28,947 [psqldb-7] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted
+2016-04-19 09:39:28,947 [psqldb-8] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+    select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    from Book b left join BookTag t on b.id = t.bookId where
+   b.id in (2) and not b.deleted group by b.id
+2016-04-19 09:39:28,948 [psqldb-7] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 398µs
+2016-04-19 09:39:28,948 [psqldb-8] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 659µs
+2016-04-19 09:39:28,949 [psqldb-7] DEBUG slick.jdbc.StatementInvoker.result - /----+-----------+----------+----------------------+----------------------+----------------------\
+2016-04-19 09:39:28,949 [psqldb-7] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2         | 3        | 4                    | 5                    | 6                    |
+2016-04-19 09:39:28,949 [psqldb-7] DEBUG slick.jdbc.StatementInvoker.result - | id | firstname | lastname | email                | createts             | modifyts             |
+2016-04-19 09:39:28,949 [psqldb-7] DEBUG slick.jdbc.StatementInvoker.result - |----+-----------+----------+----------------------+----------------------+----------------------|
+2016-04-19 09:39:28,949 [psqldb-7] DEBUG slick.jdbc.StatementInvoker.result - | 2  | Chris     | Baxter   | chris@masteringak... | 2016-04-14 00:00:... | 2016-04-14 00:00:... |
+2016-04-19 09:39:28,949 [psqldb-7] DEBUG slick.jdbc.StatementInvoker.result - \----+-----------+----------+----------------------+----------------------+----------------------/
+2016-04-19 09:39:28,949 [psqldb-8] DEBUG slick.jdbc.StatementInvoker.result - /----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------\
+2016-04-19 09:39:28,949 [psqldb-8] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2                    | 3           | 4             | 5     | 6               | 7                    | 8                    |
+2016-04-19 09:39:28,949 [psqldb-8] DEBUG slick.jdbc.StatementInvoker.result - | id | title                | author      | tags          | cost  | inventoryamount | createts             | modifyts             |
+2016-04-19 09:39:28,949 [psqldb-8] DEBUG slick.jdbc.StatementInvoker.result - |----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------|
+2016-04-19 09:39:28,949 [psqldb-8] DEBUG slick.jdbc.StatementInvoker.result - | 2  | 20000 Leagues Und... | Jules Verne | fiction,scifi | 19.99 | 0               | 2016-04-14 00:00:... | 2016-04-14 20:00:... |
+2016-04-19 09:39:28,949 [psqldb-8] DEBUG slick.jdbc.StatementInvoker.result - \----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------/
+2016-04-19 09:39:40,711 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - Before cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:39:40,711 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - After cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:39:48,589 [Bookstore-akka.actor.default-dispatcher-4] DEBUG s.backend.DatabaseComponent.action - #1: : StreamingResultAction 
+    : [
+    :     select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    :     from Book b left join BookTag t on b.id = t.bookId where
+    :    b.id in (2) and not b.deleted group by b.id]
+2016-04-19 09:39:48,589 [psqldb-9] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+    select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    from Book b left join BookTag t on b.id = t.bookId where
+   b.id in (2) and not b.deleted group by b.id
+2016-04-19 09:39:48,590 [psqldb-9] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 600µs
+2016-04-19 09:39:48,591 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - /----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------\
+2016-04-19 09:39:48,592 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2                    | 3           | 4             | 5     | 6               | 7                    | 8                    |
+2016-04-19 09:39:48,592 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - | id | title                | author      | tags          | cost  | inventoryamount | createts             | modifyts             |
+2016-04-19 09:39:48,592 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - |----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------|
+2016-04-19 09:39:48,592 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - | 2  | 20000 Leagues Und... | Jules Verne | fiction,scifi | 19.99 | 0               | 2016-04-14 00:00:... | 2016-04-14 20:00:... |
+2016-04-19 09:39:48,592 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - \----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------/
+2016-04-19 09:39:48,596 [Bookstore-akka.actor.default-dispatcher-4] DEBUG s.backend.DatabaseComponent.action - #1: StreamingInvokerAction$HeadAction [update Book set inventoryAmount = inventoryAmount + ? where id = ?]
+2016-04-19 09:39:48,597 [psqldb-10] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: update Book set inventoryAmount = inventoryAmount + ? where id = ?
+2016-04-19 09:39:48,624 [psqldb-10] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 26ms
+2016-04-19 09:39:48,624 [psqldb-10] DEBUG slick.jdbc.StatementInvoker.result - 1 rows affected
+2016-04-19 09:39:53,041 [Bookstore-akka.actor.default-dispatcher-6] INFO  c.p.m.b.order.NewSalesOrderManager - Creating new sales order processor and forwarding request
+2016-04-19 09:39:53,041 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted]
+2016-04-19 09:39:53,041 [Bookstore-akka.actor.default-dispatcher-5] INFO  c.p.m.bookstore.book.BookManager - Looking up book for id: 2
+2016-04-19 09:39:53,042 [Bookstore-akka.actor.default-dispatcher-4] DEBUG s.backend.DatabaseComponent.action - #1: : StreamingResultAction 
+    : [
+    :     select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    :     from Book b left join BookTag t on b.id = t.bookId where
+    :    b.id in (2) and not b.deleted group by b.id]
+2016-04-19 09:39:53,043 [psqldb-2] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+    select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    from Book b left join BookTag t on b.id = t.bookId where
+   b.id in (2) and not b.deleted group by b.id
+2016-04-19 09:39:53,043 [psqldb-1] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted
+2016-04-19 09:39:53,045 [psqldb-2] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 636µs
+2016-04-19 09:39:53,045 [psqldb-1] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 836µs
+2016-04-19 09:39:53,046 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - /----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------\
+2016-04-19 09:39:53,046 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2                    | 3           | 4             | 5     | 6               | 7                    | 8                    |
+2016-04-19 09:39:53,046 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - | id | title                | author      | tags          | cost  | inventoryamount | createts             | modifyts             |
+2016-04-19 09:39:53,046 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - |----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------|
+2016-04-19 09:39:53,046 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - | 2  | 20000 Leagues Und... | Jules Verne | fiction,scifi | 19.99 | 1               | 2016-04-14 00:00:... | 2016-04-14 20:00:... |
+2016-04-19 09:39:53,046 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - /----+-----------+----------+----------------------+----------------------+----------------------\
+2016-04-19 09:39:53,046 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - \----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------/
+2016-04-19 09:39:53,046 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2         | 3        | 4                    | 5                    | 6                    |
+2016-04-19 09:39:53,046 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - | id | firstname | lastname | email                | createts             | modifyts             |
+2016-04-19 09:39:53,046 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - |----+-----------+----------+----------------------+----------------------+----------------------|
+2016-04-19 09:39:53,046 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - | 2  | Chris     | Baxter   | chris@masteringak... | 2016-04-14 00:00:... | 2016-04-14 00:00:... |
+2016-04-19 09:39:53,046 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - \----+-----------+----------+----------------------+----------------------+----------------------/
+2016-04-19 09:39:53,243 [Bookstore-akka.actor.default-dispatcher-2] DEBUG c.n.h.c.p.n.NettyAsyncHttpProvider - 
+Non cached request 
+DefaultHttpRequest(chunked: false)
+POST /credit/charge HTTP/1.1
+Host: localhost:8080
+Content-Type: text/plain; charset=UTF-8
+Connection: keep-alive
+Accept: */*
+User-Agent: Dispatch/0.11.1-SNAPSHOT
+Content-Length: 134
+
+using Channel 
+[id: 0x32c97c8e, /127.0.0.1:56496 :> localhost/127.0.0.1:8080]
+
+2016-04-19 09:39:53,270 [New I/O worker #1] DEBUG c.n.h.c.p.n.NettyAsyncHttpProvider - 
+
+Request DefaultHttpRequest(chunked: false)
+POST /credit/charge HTTP/1.1
+Host: localhost:8080
+Content-Type: text/plain; charset=UTF-8
+Connection: keep-alive
+Accept: */*
+User-Agent: Dispatch/0.11.1-SNAPSHOT
+Content-Length: 134
+
+Response DefaultHttpResponse(chunked: false)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Content-Length: 59
+
+2016-04-19 09:39:53,271 [New I/O worker #1] DEBUG c.n.h.c.p.n.NettyConnectionsPool - Adding uri: http://localhost:8080 for channel [id: 0x32c97c8e, /127.0.0.1:56496 => localhost/127.0.0.1:8080]
+2016-04-19 09:39:53,284 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #1: [fused] cleanUp
+      try: andThen
+        1: SynchronousDatabaseAction.Pin
+        2: : StreamingInvokerAction$HeadAction 
+           : [
+           :       insert into CreditCardTransaction (cardHolder, cardType, cardNumber, expiration, amount, status, confirmationCode, createTs, modifyTs) 
+           :       values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+           :     ]
+        3: StreamingResultAction [select currval('creditcardtransaction_id_seq')]
+2016-04-19 09:39:53,284 [psqldb-3] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+      insert into CreditCardTransaction (cardHolder, cardType, cardNumber, expiration, amount, status, confirmationCode, createTs, modifyTs) 
+      values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    
+2016-04-19 09:39:53,313 [psqldb-3] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 20ms
+2016-04-19 09:39:53,313 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - 1 rows affected
+2016-04-19 09:39:53,313 [psqldb-3] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select currval('creditcardtransaction_id_seq')
+2016-04-19 09:39:53,314 [psqldb-3] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 861µs
+2016-04-19 09:39:53,315 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - /---------\
+2016-04-19 09:39:53,315 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - | 1       |
+2016-04-19 09:39:53,315 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - | currval |
+2016-04-19 09:39:53,315 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - |---------|
+2016-04-19 09:39:53,315 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - | 1       |
+2016-04-19 09:39:53,315 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - \---------/
+2016-04-19 09:39:53,321 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #1: StartTransaction
+2016-04-19 09:39:53,321 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #2: : StreamingInvokerAction$HeadAction 
+    : [
+    :       insert into SalesOrderHeader (userId, creditTxnId, status, totalCost, createTs, modifyTs)
+    :       values (?, ?, ?, ?, ?, ?)
+    :     ]
+2016-04-19 09:39:53,321 [psqldb-5] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+      insert into SalesOrderHeader (userId, creditTxnId, status, totalCost, createTs, modifyTs)
+      values (?, ?, ?, ?, ?, ?)
+    
+2016-04-19 09:39:53,342 [psqldb-5] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 19ms
+2016-04-19 09:39:53,342 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - 1 rows affected
+2016-04-19 09:39:53,343 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #3: StreamingResultAction [select currval('salesorderheader_id_seq')]
+2016-04-19 09:39:53,343 [psqldb-6] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select currval('salesorderheader_id_seq')
+2016-04-19 09:39:53,344 [psqldb-6] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 323µs
+2016-04-19 09:39:53,344 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - /---------\
+2016-04-19 09:39:53,344 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - | 1       |
+2016-04-19 09:39:53,344 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - | currval |
+2016-04-19 09:39:53,344 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - |---------|
+2016-04-19 09:39:53,344 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - | 1       |
+2016-04-19 09:39:53,344 [psqldb-6] DEBUG slick.jdbc.StatementInvoker.result - \---------/
+2016-04-19 09:39:53,345 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #4: success Vector(1)
+2016-04-19 09:39:53,349 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #5: [fused] andThen
+      1: : StreamingInvokerAction$HeadAction 
+         : [
+         :           insert into SalesOrderLineItem (orderId, bookId, quantity, cost, createTs, modifyTs)
+         :           values (?, ?, ?, ?, ?, ?)
+         :         ]
+      2: : StreamingInvokerAction$HeadAction 
+         : [
+         :           update Book set inventoryAmount = inventoryAmount - ? where id = ? and inventoryAmount >= ?        
+         :         ]
+2016-04-19 09:39:53,349 [psqldb-7] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+          insert into SalesOrderLineItem (orderId, bookId, quantity, cost, createTs, modifyTs)
+          values (?, ?, ?, ?, ?, ?)
+        
+2016-04-19 09:39:53,356 [psqldb-7] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 7ms
+2016-04-19 09:39:53,357 [psqldb-7] DEBUG slick.jdbc.StatementInvoker.result - 1 rows affected
+2016-04-19 09:39:53,357 [psqldb-7] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+          update Book set inventoryAmount = inventoryAmount - ? where id = ? and inventoryAmount >= ?        
+        
+2016-04-19 09:39:53,357 [psqldb-7] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 546µs
+2016-04-19 09:39:53,357 [psqldb-7] DEBUG slick.jdbc.StatementInvoker.result - 1 rows affected
+2016-04-19 09:39:53,358 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #6: success 1
+2016-04-19 09:39:53,359 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #7: success SalesOrder(1,2,1,InProgress,19.99,List(SalesOrderLineItem(0,0,2,1,19.99,Tue Apr 19 09:39:53 EDT 2016,Tue Apr 19 09:39:53 EDT 2016)),Tue Apr 19 09:39:53 EDT 2016,Tue Apr 19 09:39:53 EDT 2016)
+2016-04-19 09:39:53,359 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #8: Commit
+2016-04-19 09:40:08,280 [Bookstore-akka.actor.default-dispatcher-4] INFO  c.p.m.b.order.NewSalesOrderManager - Creating new sales order processor and forwarding request
+2016-04-19 09:40:08,280 [Bookstore-akka.actor.default-dispatcher-5] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted]
+2016-04-19 09:40:08,280 [Bookstore-akka.actor.default-dispatcher-4] INFO  c.p.m.bookstore.book.BookManager - Looking up book for id: 2
+2016-04-19 09:40:08,280 [psqldb-9] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select id, firstName, lastName, email, createTs, modifyTs from StoreUser  where id = ? and not deleted
+2016-04-19 09:40:08,280 [Bookstore-akka.actor.default-dispatcher-2] DEBUG s.backend.DatabaseComponent.action - #1: : StreamingResultAction 
+    : [
+    :     select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    :     from Book b left join BookTag t on b.id = t.bookId where
+    :    b.id in (2) and not b.deleted group by b.id]
+2016-04-19 09:40:08,281 [psqldb-10] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: 
+    select b.id, b.title, b.author, array_to_string(array_agg(t.tag), ',') as tags, b.cost, b.inventoryAmount, b.createTs, b.modifyTs
+    from Book b left join BookTag t on b.id = t.bookId where
+   b.id in (2) and not b.deleted group by b.id
+2016-04-19 09:40:08,281 [psqldb-9] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 351µs
+2016-04-19 09:40:08,281 [psqldb-10] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 506µs
+2016-04-19 09:40:08,282 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - /----+-----------+----------+----------------------+----------------------+----------------------\
+2016-04-19 09:40:08,282 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2         | 3        | 4                    | 5                    | 6                    |
+2016-04-19 09:40:08,282 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - | id | firstname | lastname | email                | createts             | modifyts             |
+2016-04-19 09:40:08,282 [psqldb-10] DEBUG slick.jdbc.StatementInvoker.result - /----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------\
+2016-04-19 09:40:08,282 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - |----+-----------+----------+----------------------+----------------------+----------------------|
+2016-04-19 09:40:08,282 [psqldb-10] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2                    | 3           | 4             | 5     | 6               | 7                    | 8                    |
+2016-04-19 09:40:08,282 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - | 2  | Chris     | Baxter   | chris@masteringak... | 2016-04-14 00:00:... | 2016-04-14 00:00:... |
+2016-04-19 09:40:08,282 [psqldb-10] DEBUG slick.jdbc.StatementInvoker.result - | id | title                | author      | tags          | cost  | inventoryamount | createts             | modifyts             |
+2016-04-19 09:40:08,282 [psqldb-9] DEBUG slick.jdbc.StatementInvoker.result - \----+-----------+----------+----------------------+----------------------+----------------------/
+2016-04-19 09:40:08,282 [psqldb-10] DEBUG slick.jdbc.StatementInvoker.result - |----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------|
+2016-04-19 09:40:08,282 [psqldb-10] DEBUG slick.jdbc.StatementInvoker.result - | 2  | 20000 Leagues Und... | Jules Verne | fiction,scifi | 19.99 | 0               | 2016-04-14 00:00:... | 2016-04-14 20:00:... |
+2016-04-19 09:40:08,282 [psqldb-10] DEBUG slick.jdbc.StatementInvoker.result - \----+----------------------+-------------+---------------+-------+-----------------+----------------------+----------------------/
+2016-04-19 09:40:10,711 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - Before cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:40:10,711 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - After cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:40:10,957 [New I/O worker #1] DEBUG c.n.h.c.p.n.NettyAsyncHttpProvider - Channel Closed: [id: 0x32c97c8e, /127.0.0.1:56496 :> localhost/127.0.0.1:8080] with attachment com.ning.http.client.providers.netty.NettyAsyncHttpProvider$DiscardEvent@133880b5
+2016-04-19 09:41:22,058 [main] WARN  com.zaxxer.hikari.HikariConfig - The jdbcConnectionTest property is now deprecated, see the documentation for connectionTestQuery
+2016-04-19 09:41:22,063 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariCP pool psqldb configuration:
+2016-04-19 09:41:22,080 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2016-04-19 09:41:22,080 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2016-04-19 09:41:22,081 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................
+2016-04-19 09:41:22,081 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionCustomizer............com.zaxxer.hikari.AbstractHikariConfig$1@3427b02d
+2016-04-19 09:41:22,081 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionCustomizerClassName...
+2016-04-19 09:41:22,081 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............
+2016-04-19 09:41:22,081 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............select 1
+2016-04-19 09:41:22,081 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............1000
+2016-04-19 09:41:22,081 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................
+2016-04-19 09:41:22,081 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............
+2016-04-19 09:41:22,081 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................
+2016-04-19 09:41:22,082 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2016-04-19 09:41:22,082 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName.................org.postgresql.Driver
+2016-04-19 09:41:22,082 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2016-04-19 09:41:22,082 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............
+2016-04-19 09:41:22,082 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2016-04-19 09:41:22,082 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailFast..........false
+2016-04-19 09:41:22,082 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2016-04-19 09:41:22,082 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbc4ConnectionTest.............false
+2016-04-19 09:41:22,082 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:postgresql://localhost:5432/akkaexampleapp
+2016-04-19 09:41:22,082 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................50
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................psqldb
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............
+2016-04-19 09:41:22,083 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................root
+2016-04-19 09:41:22,084 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............1000
+2016-04-19 09:41:22,085 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariCP pool psqldb is starting.
+2016-04-19 09:41:22,139 [HikariCP connection filler (pool psqldb)] DEBUG c.zaxxer.hikari.pool.PoolUtilities - psqldb - Connection.setNetworkTimeout() not supported
+2016-04-19 09:41:22,204 [HikariCP connection filler (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - After fill pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:41:22,306 [Bookstore-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2016-04-19 09:41:22,386 [Bookstore-akka.actor.default-dispatcher-3] INFO  Server - Adding endpoint: com.packt.masteringakka.bookstore.order.SalesOrderEndpoint@53045c6c
+2016-04-19 09:41:22,387 [Bookstore-akka.actor.default-dispatcher-3] INFO  Server - Adding endpoint: com.packt.masteringakka.bookstore.user.UserEndpoint@cb0755b
+2016-04-19 09:41:22,387 [Bookstore-akka.actor.default-dispatcher-3] INFO  Server - Adding endpoint: com.packt.masteringakka.bookstore.book.BookEndpoint@33065d67
+2016-04-19 09:41:22,389 [main] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+2016-04-19 09:41:22,393 [main] DEBUG i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+2016-04-19 09:41:22,400 [main] DEBUG i.n.u.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2016-04-19 09:41:22,400 [main] DEBUG i.n.u.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2016-04-19 09:41:22,400 [main] DEBUG i.n.u.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2016-04-19 09:41:22,400 [main] DEBUG i.n.u.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+2016-04-19 09:41:22,417 [main] DEBUG i.n.util.internal.PlatformDependent - UID: 501
+2016-04-19 09:41:22,417 [main] DEBUG i.n.util.internal.PlatformDependent - Java version: 8
+2016-04-19 09:41:22,417 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+2016-04-19 09:41:22,417 [main] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2016-04-19 09:41:22,417 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+2016-04-19 09:41:22,420 [main] DEBUG i.n.util.internal.PlatformDependent - Javassist: available
+2016-04-19 09:41:22,421 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/7q/8kqdnsxx35765lcgbqk6_23r0000gn/T (java.io.tmpdir)
+2016-04-19 09:41:22,421 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-04-19 09:41:22,421 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2016-04-19 09:41:22,432 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2016-04-19 09:41:22,432 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-04-19 09:41:22,457 [main] DEBUG i.n.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x78405865ac58a963 (took 1 ms)
+2016-04-19 09:41:22,477 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+2016-04-19 09:41:22,477 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-04-19 09:41:22,478 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-04-19 09:41:22,478 [main] DEBUG io.netty.util.NetUtil - /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-04-19 09:41:37,344 [nioEventLoopGroup-3-1] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetectionLevel: simple
+2016-04-19 09:41:37,357 [nioEventLoopGroup-3-1] DEBUG i.n.u.i.JavassistTypeParameterMatcherGenerator - Generated: io.netty.util.internal.__matchers__.io.netty.handler.codec.http.HttpObjectMatcher
+2016-04-19 09:41:37,363 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-04-19 09:41:37,366 [nioEventLoopGroup-3-1] DEBUG io.netty.util.internal.Cleaner0 - java.nio.ByteBuffer.cleaner(): available
+2016-04-19 09:41:37,397 [Bookstore-akka.actor.default-dispatcher-3] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select id, userId, creditTxnId, status, totalCost, createTs, modifyTs from SalesOrderHeader where id in (1)]
+2016-04-19 09:41:37,408 [psqldb-1] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select id, userId, creditTxnId, status, totalCost, createTs, modifyTs from SalesOrderHeader where id in (1)
+2016-04-19 09:41:37,411 [psqldb-1] DEBUG c.zaxxer.hikari.pool.PoolUtilities - psqldb - Statement.setQueryTimeout() not supported
+2016-04-19 09:41:37,418 [psqldb-1] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 1ms
+2016-04-19 09:41:37,444 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - /----+--------+-------------+------------+-----------+----------------------+----------------------\
+2016-04-19 09:41:37,444 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2      | 3           | 4          | 5         | 6                    | 7                    |
+2016-04-19 09:41:37,444 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - | id | userid | credittxnid | status     | totalcost | createts             | modifyts             |
+2016-04-19 09:41:37,444 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - |----+--------+-------------+------------+-----------+----------------------+----------------------|
+2016-04-19 09:41:37,444 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2      | 1           | InProgress | 19.99     | 2016-04-19 00:00:... | 2016-04-19 00:00:... |
+2016-04-19 09:41:37,444 [psqldb-1] DEBUG slick.jdbc.StatementInvoker.result - \----+--------+-------------+------------+-----------+----------------------+----------------------/
+2016-04-19 09:41:37,451 [Bookstore-akka.actor.default-dispatcher-3] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select id, orderId, bookId, quantity, cost, createTs, modifyTs from SalesOrderLineItem where orderId in (1)]
+2016-04-19 09:41:37,452 [psqldb-2] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select id, orderId, bookId, quantity, cost, createTs, modifyTs from SalesOrderLineItem where orderId in (1)
+2016-04-19 09:41:37,452 [psqldb-2] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 713µs
+2016-04-19 09:41:37,455 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - /----+---------+--------+----------+-------+----------------------+----------------------\
+2016-04-19 09:41:37,455 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2       | 3      | 4        | 5     | 6                    | 7                    |
+2016-04-19 09:41:37,455 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - | id | orderid | bookid | quantity | cost  | createts             | modifyts             |
+2016-04-19 09:41:37,455 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - |----+---------+--------+----------+-------+----------------------+----------------------|
+2016-04-19 09:41:37,455 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 1       | 2      | 1        | 19.99 | 2016-04-19 00:00:... | 2016-04-19 00:00:... |
+2016-04-19 09:41:37,455 [psqldb-2] DEBUG slick.jdbc.StatementInvoker.result - \----+---------+--------+----------+-------+----------------------+----------------------/
+2016-04-19 09:41:52,096 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - Before cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:41:52,096 [Hikari Housekeeping Timer (pool psqldb)] DEBUG com.zaxxer.hikari.pool.HikariPool - After cleanup pool stats psqldb (total=10, inUse=0, avail=10, waiting=0)
+2016-04-19 09:42:00,987 [Bookstore-akka.actor.default-dispatcher-3] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select distinct(orderId) from SalesOrderLineItem where bookId = ?]
+2016-04-19 09:42:00,987 [psqldb-3] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select distinct(orderId) from SalesOrderLineItem where bookId = ?
+2016-04-19 09:42:00,990 [psqldb-3] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 917µs
+2016-04-19 09:42:00,990 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - /---------\
+2016-04-19 09:42:00,990 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - | 1       |
+2016-04-19 09:42:00,990 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - | orderid |
+2016-04-19 09:42:00,990 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - |---------|
+2016-04-19 09:42:00,991 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - | 1       |
+2016-04-19 09:42:00,991 [psqldb-3] DEBUG slick.jdbc.StatementInvoker.result - \---------/
+2016-04-19 09:42:00,991 [Bookstore-akka.actor.default-dispatcher-3] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select id, userId, creditTxnId, status, totalCost, createTs, modifyTs from SalesOrderHeader where id in (1)]
+2016-04-19 09:42:00,991 [psqldb-4] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select id, userId, creditTxnId, status, totalCost, createTs, modifyTs from SalesOrderHeader where id in (1)
+2016-04-19 09:42:00,992 [psqldb-4] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 421µs
+2016-04-19 09:42:00,993 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - /----+--------+-------------+------------+-----------+----------------------+----------------------\
+2016-04-19 09:42:00,993 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2      | 3           | 4          | 5         | 6                    | 7                    |
+2016-04-19 09:42:00,993 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - | id | userid | credittxnid | status     | totalcost | createts             | modifyts             |
+2016-04-19 09:42:00,993 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - |----+--------+-------------+------------+-----------+----------------------+----------------------|
+2016-04-19 09:42:00,993 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2      | 1           | InProgress | 19.99     | 2016-04-19 00:00:... | 2016-04-19 00:00:... |
+2016-04-19 09:42:00,993 [psqldb-4] DEBUG slick.jdbc.StatementInvoker.result - \----+--------+-------------+------------+-----------+----------------------+----------------------/
+2016-04-19 09:42:00,994 [Bookstore-akka.actor.default-dispatcher-3] DEBUG s.backend.DatabaseComponent.action - #1: StreamingResultAction [select id, orderId, bookId, quantity, cost, createTs, modifyTs from SalesOrderLineItem where orderId in (1)]
+2016-04-19 09:42:00,994 [psqldb-5] DEBUG slick.jdbc.JdbcBackend.statement - Preparing statement: select id, orderId, bookId, quantity, cost, createTs, modifyTs from SalesOrderLineItem where orderId in (1)
+2016-04-19 09:42:00,994 [psqldb-5] DEBUG slick.jdbc.JdbcBackend.benchmark - Execution of prepared statement took 357µs
+2016-04-19 09:42:00,995 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - /----+---------+--------+----------+-------+----------------------+----------------------\
+2016-04-19 09:42:00,995 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 2       | 3      | 4        | 5     | 6                    | 7                    |
+2016-04-19 09:42:00,995 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - | id | orderid | bookid | quantity | cost  | createts             | modifyts             |
+2016-04-19 09:42:00,995 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - |----+---------+--------+----------+-------+----------------------+----------------------|
+2016-04-19 09:42:00,996 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - | 1  | 1       | 2      | 1        | 19.99 | 2016-04-19 00:00:... | 2016-04-19 00:00:... |
+2016-04-19 09:42:00,996 [psqldb-5] DEBUG slick.jdbc.StatementInvoker.result - \----+---------+--------+----------+-------+----------------------+----------------------/

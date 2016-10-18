@@ -1,0 +1,1 @@
+name := "initial-example-user-services"

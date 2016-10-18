@@ -1,0 +1,25 @@
+package com.packt.masteringakka.bookstore.user;
+option java_outer_classname = "Datamodel";
+option optimize_for = SPEED;
+
+
+message BookstoreUser{
+  required string email = 1;
+  required string firstName = 2;
+  required string lastName = 3;
+  required int64 createTs = 4;
+  required bool deleted = 5;
+} 
+ 
+message UserCreated{
+  required BookstoreUser user = 1;
+}
+
+message PersonalInfoUpdated{
+  required string firstName = 1;
+  required string lastName = 2;
+}
+
+message UserDeleted{
+  required string email = 1;
+}

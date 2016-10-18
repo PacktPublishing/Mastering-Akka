@@ -1,0 +1,16 @@
+<configuration debug="true">
+  
+
+    <!-- The catch all logger that will receive everything (except the access log data) -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date{ISO8601} %-5level %logger{36} %X{akkaSource} - %msg%n</pattern>
+      <immediateFlush>true</immediateFlush>
+    </encoder>
+  </appender> 
+  
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+  </root>
+  
+</configuration>

@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      - "TZ=Europe/Amsterdam"        
+      - "POSTGRES_USER=docker"
+      - "POSTGRES_PASSWORD=docker"
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./sql:/docker-entrypoint-initdb.d"
+
+  bookstore:
+    image: chapter3-server-incomplete:latest
+    container_name: bookstore
+    environment:
+      - "TZ=Europe/Amsterdam"
+      - "DATABASE_USER=docker"
+      - "DATABASE_PASSWORD=docker"
+      - "DATABASE_URL=jdbc:postgresql://postgres:5432/akkaexampleapp"
+    ports:
+      - "8080:8080"

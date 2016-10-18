@@ -1,0 +1,56 @@
+version: '2'
+
+services:
+  cassandra:
+    image: cassandra:3
+    container_name: cassandra
+    ports:
+      - "7000:7000"
+      - "9042:9042"
+    environment:
+      - "CASSANDRA_CLUSTER_NAME=OUR_DOCKERIZED_CASSANDRA_SINGLE_NODE_CLUSTER"
+
+  elasticsearch:
+    image: elasticsearch:2.3.3
+    container_name: elasticsearch
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - "TZ=Europe/Amsterdam"
+    volumes:
+      - "./elasticsearch/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
+
+  bookstore1:
+    image: chapter8-server-incomplete:latest
+    container_name: bookstore1
+    environment:
+      - "NODE_HOSTNAME=bookstore1"
+      - "HTTP_PORT=8080"
+      - "CLUSTER_PORT=2553"    
+      - "TZ=Europe/Amsterdam"
+      - "CASSANDRA_HOST=cassandra"
+      - "ELASTICSEARCH_HOST=elasticsearch"
+      - "PERSISTENT_ENTITY_TIMEOUT=10s"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - "cassandra" 
+      - "elasticsearch"     
+
+  bookstore2:
+    image: chapter8-server-incomplete:latest
+    container_name: bookstore2
+    environment:
+      - "NODE_HOSTNAME=bookstore2"
+      - "HTTP_PORT=8081"
+      - "CLUSTER_PORT=2554"
+      - "TZ=Europe/Amsterdam"
+      - "CASSANDRA_HOST=cassandra"
+      - "ELASTICSEARCH_HOST=elasticsearch"
+      - "PERSISTENT_ENTITY_TIMEOUT=10s"
+    ports:
+      - "8081:8081"
+    depends_on:
+      - "cassandra" 
+      - "elasticsearch"              

@@ -1,0 +1,12 @@
+{
+  "userEmail": "chris@masteringakka.com",
+  "lineItems": [
+    {"bookId": "354dacc8-580e-420c-ab80-4c661379d737", "quantity": 1}
+  ],
+  "cardInfo": {
+    "cardHolder": "Chris Baxter",
+    "cardType": "Visa",
+    "cardNumber": "4117707003848516",
+    "expiration": 1551441671000
+  }
+}

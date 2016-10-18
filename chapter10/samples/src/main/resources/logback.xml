@@ -1,0 +1,50 @@
+<configuration debug="true">
+  
+
+    <!-- The catch all logger that will receive everything (except the access log data) -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date{ISO8601} %-5level %logger{36} %X{akkaSource} - %msg%n</pattern>
+      <immediateFlush>true</immediateFlush>
+    </encoder>
+  </appender> 
+  
+  <appender name="AccessLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>access.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	    <fileNamePattern>access.%d{yyyy-MM-dd}.log</fileNamePattern>
+	    <maxHistory>30</maxHistory>
+    </rollingPolicy>        
+    <append>true</append> 
+    <encoder>
+      <pattern>%msg%n</pattern>
+      <immediateFlush>true</immediateFlush>
+    </encoder>
+  </appender>  
+  
+  <appender name="ExternalCallLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>externalcall.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	    <fileNamePattern>externalcall.%d{yyyy-MM-dd}.log</fileNamePattern>
+	    <maxHistory>30</maxHistory>
+    </rollingPolicy>        
+    <append>true</append> 
+    <encoder>
+      <pattern>%msg%n</pattern>
+      <immediateFlush>true</immediateFlush>
+    </encoder>
+  </appender>     
+  
+  <logger name="AccessLog" additivity="false">
+    <appender-ref ref="AccessLog" />
+  </logger> 
+  
+  <logger name="ExternalCallLog" additivity="false">
+    <appender-ref ref="ExternalCallLog" />
+  </logger>    
+  
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />    
+  </root>
+  
+</configuration>
