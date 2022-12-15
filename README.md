@@ -1,3 +1,15 @@
+
+### Get this product for $5
+
+<i>Packt is having its biggest sale of the year. Get this eBook or any other book, video, or course that you like just for $5 each</i>
+
+
+<b><p align='center'>[Buy now](https://packt.link/9781786465023)</p></b>
+
+
+<b><p align='center'>[Buy similar titles for just $5](https://subscription.packtpub.com/search)</p></b>
+
+
 [![GitHub issues](https://img.shields.io/github/issues/PacktPublishing/R-Data-Structures-and-Algorithms.svg)](https://github.com/PacktPublishing/R-Data-Structures-and-Algorithms/issues)   [![GitHub forks](https://img.shields.io/github/forks/PacktPublishing/R-Data-Structures-and-Algorithms.svg)](https://github.com/PacktPublishing/R-Data-Structures-and-Algorithms/network)   [![GitHub stars](https://img.shields.io/github/stars/PacktPublishing/R-Data-Structures-and-Algorithms.svg)](https://github.com/PacktPublishing/R-Data-Structures-and-Algorithms/stargazers)   [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/PacktPublishing/R-Data-Structures-and-Algorithms/master/License)
 
 # Mastering Akka
